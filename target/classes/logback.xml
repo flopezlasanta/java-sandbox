@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<charset>utf-8</charset>
+			<Pattern>[%p] %c - %m%n</Pattern>
+		</encoder>
+	</appender>
+
+	<!-- JSandBoox -->
+	<logger name="org.teraflopx.jsandboox" level="TRACE" />
+
+	<!-- Logback -->
+	<logger name="ch.qos.logback" level="WARN" />
+	<!-- Apache Tomcat -->
+
+	<logger name="org.apache" level="WARN" />
+	<logger name="org.apache.catalina.startup.DigesterFactory"
+		level="OFF" />
+
+	<!-- Spring -->
+	<logger name="org.springframework" level="WARN" />
+	<logger name="org.springframework.web" level="WARN" />
+
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+	</root>
+</configuration>
