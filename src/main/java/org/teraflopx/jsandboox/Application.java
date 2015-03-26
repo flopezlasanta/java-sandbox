@@ -8,12 +8,12 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 public class Application {
 
-	@Autowired
-	private Environment env;
+  @Autowired
+  private Environment env;
 
-	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(Application.class);
-		app.setShowBanner(false);
-		app.run(args);
-	}
+  public static void main(String[] args) {
+    SpringApplication app = new SpringApplication(Application.class);
+    app.setShowBanner(false);
+    app.run(args);
+  }
 }

@@ -10,28 +10,28 @@ import org.teraflopx.jsandboox.Application;
 @RestController
 public class IndexResource implements ErrorController {
 
-	private static final String INDEX_PATH = "/";
-	private static final String ERROR_PATH = "/error";
+  private static final String INDEX_PATH = "/";
+  private static final String ERROR_PATH = "/error";
 
-	private final Logger log = LoggerFactory.getLogger(Application.class);
+  private final Logger log = LoggerFactory.getLogger(Application.class);
 
-	@RequestMapping(value = INDEX_PATH)
-	public String home() {
-		log.debug("Touching home!");
-		
-		return "Welcome to JSandBoox!";
-	}
+  @RequestMapping(value = INDEX_PATH)
+  public String home() {
+    log.debug("Touching home!");
 
-	@RequestMapping(value = ERROR_PATH)
-	public String error() {
-		log.debug("Touching error!");
-		
-		return "Ups!";
-	}
+    return "Welcome to JSandBoox!";
+  }
 
-	@Override
-	public String getErrorPath() {
-		return ERROR_PATH;
-	}
+  @RequestMapping(value = ERROR_PATH)
+  public String error() {
+    log.debug("Touching error!");
+
+    return "Ups!";
+  }
+
+  @Override
+  public String getErrorPath() {
+    return ERROR_PATH;
+  }
 
 }

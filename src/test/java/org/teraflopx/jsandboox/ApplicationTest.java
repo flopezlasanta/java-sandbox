@@ -10,8 +10,7 @@ import org.teraflopx.jsandboox.Application;
 @SpringApplicationConfiguration(classes = Application.class)
 public class ApplicationTest {
 
-	@Test
-	public void contextLoads() {
-	}
+  @Test
+  public void contextLoads() {}
 
 }
