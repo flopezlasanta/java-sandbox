@@ -28,7 +28,7 @@ public class ArrayOperationsTest {
 
   @Test
   public void testBinarySearchRecursive() {
-    int[] data = new Random().ints().limit(100).toArray();
+    int[] data = new int[] {1, 2, 6, 7, 8, 12};
 
     long start = System.nanoTime();
 
