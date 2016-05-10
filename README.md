@@ -1,7 +1,6 @@
-# jSandbox
-Java sandbox
+# Java sandbox
 
-[![Travis CI Status](https://travis-ci.org/teraflopx/java-sandbox.svg?branch=master)](https://travis-ci.org/teraflopx/java-sandbox)
+[![Travis CI Status](https://travis-ci.org/flopezlasanta/java-sandbox.svg?branch=master)](https://travis-ci.org/flopezlasanta/java-sandbox)
 
 ## Summary
 This a personal project for practicing with Java programming language.
